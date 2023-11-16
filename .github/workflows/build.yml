@@ -89,7 +89,7 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-gradle-
       - name: Build with Gradle
-        run: cd cas-server-support-duo; ./gradlew build ${{ env.GRADLE_BUILD_OPTIONS }}
+        run: pwd; cd cas-server-support-duo; ./gradlew build ${{ env.GRADLE_BUILD_OPTIONS }}
       - uses: actions/upload-artifact@v3
         with:
           name: binary-artifacts
