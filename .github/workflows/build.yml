@@ -95,7 +95,7 @@ jobs:
           name: binary-artifacts
           path: ./**/build/libs/*.*
       - name: Publish package
-        run: ../../gradle publish
+        run: ./gradlew publish
   ##########################################################################
 
  # build-latest-jdk:
