@@ -95,7 +95,7 @@ jobs:
           name: binary-artifacts
           path: ./**/build/libs/*.*
       - name: Publish package
-        run: ./gradlew publish
+        run: ./gradlew publish --warning-mode all
   ##########################################################################
 
  # build-latest-jdk:
